@@ -6,6 +6,10 @@
     top: 0;
     z-index: 999;
   }
+
+  .topbar:hover {
+    transform: scale(0.8);
+  }
   
   .topbarWrapper {
     height: 100%;
