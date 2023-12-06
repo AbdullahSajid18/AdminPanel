@@ -7,9 +7,7 @@
     z-index: 999;
   }
 
-  .topbar:hover {
-    transform: scale(0.8);
-  }
+  
   
   .topbarWrapper {
     height: 100%;
@@ -24,6 +22,12 @@
     font-size: 30px;
     color: darkblue;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  .logo:hover {
+    transform: scale(1.1); 
   }
   
   .topRight{
