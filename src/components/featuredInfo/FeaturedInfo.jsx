@@ -1,41 +1,59 @@
+import React from "react";
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
+import Button from "@mui/material/Button";
+import AddIcon from "@mui/icons-material/Add";
 import "./featuredInfo.css";
-import { MoveDown, MoveUp  } from 'lucide-react';
 
 const FeaturedInfo = () => {
   return (
-    <div className="featured">
-      <div className="featuredItem">
-        <span className="featuredTitle">Revanue</span>
-        <div className="featuredMoneyContainer">
-          <span className="featuredMoney">$2,415</span>
-          <span className="featuredMoneyRate">
-            -11.4 <MoveDown  className="featuredIcon negative"/>
-          </span>
+    <>
+    <div className="admin__topbar">
+      <div className="admin__topbarWrapper">
+        <div>
+          <div className="title">
+            <span>
+              <PeopleOutlineIcon />
+            </span>
+            <span>Students</span>
+          </div>
         </div>
-        <span className="featuredSub">Compared to last month</span>
-      </div>
-      <div className="featuredItem">
-        <span className="featuredTitle">Sales</span>
-        <div className="featuredMoneyContainer">
-          <span className="featuredMoney">$4,415</span>
-          <span className="featuredMoneyRate">
-            -1.4 <MoveDown className="featuredIcon negative"/>
-          </span>
+        <div>
+          <Button variant="contained" disableElevation>
+            <span>
+              <AddIcon />
+            </span>
+            <span>Add Student</span>
+          </Button>
         </div>
-        <span className="featuredSub">Compared to last month</span>
-      </div>
-      <div className="featuredItem">
-        <span className="featuredTitle">Cost</span>
-        <div className="featuredMoneyContainer">
-          <span className="featuredMoney">$2,225</span>
-          <span className="featuredMoneyRate">
-            +2.4 <MoveUp  className="featuredIcon"/>
-          </span>
-        </div>
-        <span className="featuredSub">Compared to last month</span>
       </div>
     </div>
-  )
-}
 
-export default FeaturedInfo
+    <div className="table__container">
+      <div className="admin__tableWrapper">
+        <ul className="tableMainItems">
+          <li>ID</li>
+          <li>Profile Img</li>
+          <li>Name</li>
+          <li>Course Name</li>
+          <li>Password</li>
+        </ul>
+        <ul
+          style={{
+            listStyle: "none",
+            display: "flex",
+            width: "10%",
+            justifyContent: "space-between",
+          }}
+        >
+          <li>ID</li>
+          <li>ID</li>
+        </ul>
+      </div>
+
+      <div></div>
+    </div>
+  </>
+);
+};
+
+export default FeaturedInfo;

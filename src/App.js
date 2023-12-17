@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Topbar from "./components/topbar/Topbar";
 import Home from "./pages/home/Home";
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
@@ -13,7 +12,6 @@ import NewProduct from "./pages/newProduct/NewProduct";
 function App() {
   return (
     <Router>
-      <Topbar />
       <div className="container">
         <Sidebar />
 
